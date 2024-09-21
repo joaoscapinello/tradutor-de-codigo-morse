@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tradutor de Código Morse</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1><i class="fas fa-dot-circle"></i> Tradutor de Código Morse <i class="fas fa-signal"></i></h1>
+    </div>
+    <div class="translator">
+      <div class="input-group">
+        <div class="label">
+          <label for="textoEntrada">Texto <i class="fas fa-copy"></i></label> 
+          <span class="stats" id="textoStats">0 palavras</span>
+        </div>
+        <textarea id="textoEntrada" placeholder="Digite o texto aqui..." onkeydown="handleKeyDown(event, 'texto')"></textarea>
+        <button id="btnConverterMorse" onclick="traduzirParaMorse()">
+          <i class="fas fa-exchange-alt"></i> Converter para Morse 
+        </button>
+      </div>
+      <div class="input-group">
+        <div class="label">
+          <label for="morseEntrada">Código Morse <i class="fas fa-copy"></i></label> 
+          <span class="stats" id="morseStats">0 caracteres</span>
+        </div>
+        <textarea id="morseEntrada" placeholder="Digite o código Morse aqui..." onkeydown="handleKeyDown(event, 'morse')"></textarea>
+        <button id="btnConverterTexto" onclick="traduzirParaTexto()">
+          <i class="fas fa-exchange-alt"></i> Converter para Texto
+        </button>
+      </div>
+    </div>
+    <div class="output">
+      <h2><i class="fas fa-check-circle"></i> Saída:</h2>
+      <p id="saida"></p>
+      <div id="opcoesSaida">
+        <button id="btnSalvar" onclick="salvarCodigoMorse()" style="display: none;">
+          <i class="fas fa-save"></i> Salvar Código Morse
+        </button>
+        <div id="senhaOpcoes" style="display: none;">
+          <label for="senha">Senha (opcional):</label>
+          <input type="password" id="senha">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
