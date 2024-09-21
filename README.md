@@ -42,4 +42,5 @@ Opções de Compartilhamento: Adicionar funcionalidades para compartilhar o cód
 Funcionalidades de Áudio: Implementar a reprodução sonora do código Morse traduzido.
 6. Conclusão:
 Este Tradutor de Código Morse oferece uma solução completa e fácil de usar para traduzir texto para código Morse e vice-versa, além de fornecer funcionalidades extras valiosas, como salvamento com senha e uma interface amigável. Com as melhorias futuras sugeridas, este programa pode se tornar uma ferramenta ainda mais poderosa e versátil.
+
 **Obs: Este foi feito por um estudante de Engenharia de Software - Foi utilizado o Google AI Studio para melhor desenvolvimento, capacitação e conclusão do projeto**
